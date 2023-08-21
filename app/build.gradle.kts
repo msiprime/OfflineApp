@@ -3,7 +3,6 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
-    id("kotlin-kapt")
 }
 
 android {
@@ -49,11 +48,10 @@ dependencies {
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
     /* Room dependency */
+
+
     implementation("androidx.room:room-runtime:2.5.2")
     annotationProcessor("androidx.room:room-compiler:2.5.2")
     implementation("androidx.room:room-ktx:2.5.2")
-    // optional - Test helpers
-    testImplementation("androidx.room:room-testing:2.5.2")
-    // optional - Paging 3 Integration
-    implementation("androidx.room:room-paging:2.5.2")
+
 }
